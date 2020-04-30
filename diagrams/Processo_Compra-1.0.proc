@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_j8C4sIPbEeqXlKUduLqENg" name="Processo_Compra" author="Lovelace" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
     <elements xmi:type="process:Pool" xmi:id="_j8C4sYPbEeqXlKUduLqENg" name="Processo Compra">
       <elements xmi:type="process:Lane" xmi:id="_j8C4soPbEeqXlKUduLqENg" name="Colaborador" actor="_j8C4y4PbEeqXlKUduLqENg">
@@ -277,8 +277,15 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_CN8EF4klEeqCs6_Zt3VV5Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_CN8EFoklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_J6bUSYsKEeqHHvcBOa57dw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_QuxV4IsKEeqHHvcBOa57dw" name="newForm" content="6f4486ec-cfa5-40b2-bb16-1a93b82cfba6" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_QuxV4IsKEeqHHvcBOa57dw" name="validarDadosDespesasCorretos" content="6f4486ec-cfa5-40b2-bb16-1a93b82cfba6" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_FD90QIsNEeqHHvcBOa57dw" documentation="Actor/Manager se os dados das despesas preenchidos pelo colaborador são validos" name="validarDespesasManager" definitionId="initiator-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_FD90QYsNEeqHHvcBOa57dw" definitionId="initiator-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FD90QosNEeqHHvcBOa57dw" key="autoAssign">
+                <expression xmi:type="expression:Expression" xmi:id="_FD90Q4sNEeqHHvcBOa57dw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_J6bUSIsKEeqHHvcBOa57dw">
             <inputs xmi:type="process:ContractInput" xmi:id="_LE9i0IsMEeqHHvcBOa57dw" name="status" description="Estado da validação da despesa">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_LE9i0YsMEeqHHvcBOa57dw"/>
