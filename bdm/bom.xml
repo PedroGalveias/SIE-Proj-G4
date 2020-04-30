@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.10.4">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.comprasPedidos">
+            <fields>
+                <field type="LONG" length="255" name="compraID" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="dataPedido" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nomeCompra" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="numCompromisso" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="temCabimento" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="numCabimento" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="valorCompra" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="motivoRecusa" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByCompraIDD" content="SELECT c &#xA;FROM comprasPedidos c &#xA;WHERE c.compraID = :compraID&#xA;ORDER BY c.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="compraID" className="java.lang.Long"/>
+                        <queryParameter name="dataCompra" className="java.time.LocalDate"/>
+                        <queryParameter name="nomeCompra" className="java.lang.String"/>
+                        <queryParameter name="numCompromisso" className="java.lang.Long"/>
+                        <queryParameter name="temCabimento" className="java.lang.Boolean"/>
+                        <queryParameter name="numCabimento" className="java.lang.Long"/>
+                        <queryParameter name="valorCompra" className="java.lang.Float"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

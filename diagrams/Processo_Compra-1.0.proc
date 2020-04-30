@@ -12,6 +12,131 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_j8C4uIPbEeqXlKUduLqENg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_j8C4uYPbEeqXlKUduLqENg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_j8C4uoPbEeqXlKUduLqENg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqC54sLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqC6IsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqC6YsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos">
+                <defaultValue xmi:type="expression:Expression" xmi:id="_l5mqAIsMEeqHHvcBOa57dw" name="initCompraPedido()" content="def comprasPedidosVar = new com.company.model.comprasPedidos()&#xD;&#xA;comprasPedidosVar.compraID = BonitaUsers.getProcessInstanceInitiator(apiAccessor, processInstanceId).id&#xD;&#xA;comprasPedidosVar.status = &quot;pendente&quot; &#xD;&#xA;comprasPedidosVar.dataCompra =      ?.dataCompra&#xD;&#xA;comprasPedidosVar.nomeCompra =      ?.nomeCompra&#xD;&#xA;comprasPedidosVar.numCompromisso =      ?.numCompromisso?.trim() ?      .numCompromisso.toLong() : null&#xD;&#xA;comprasPedidosVar.temCabimento =      ?.temCabimento&#xD;&#xA;comprasPedidosVar.numCabimento =      ?.numCabimento?.trim() ?      .numCabimento.toLong() : null&#xD;&#xA;comprasPedidosVar.valorCompra =      ?.valorCompra?.toFloat()&#xD;&#xA;return comprasPedidosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.comprasPedidos">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_l5mqAYsMEeqHHvcBOa57dw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_l5mqAosMEeqHHvcBOa57dw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </defaultValue>
+              </referencedElements>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqC6osLEeqHHvcBOa57dw" name="compraPedidoInput.dataPedido" content="     ?.dataPedido" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqC7IsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setDataPedido">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqC7YsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqC7osLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqC74sLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqC8IsLEeqHHvcBOa57dw" name="compraPedidoInput.nomeCompra" content="     ?.nomeCompra" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqC8osLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNomeCompra">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqC84sLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqC9IsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqC9YsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqC9osLEeqHHvcBOa57dw" name="compraPedidoInput.numCompromisso" content="     ?.numCompromisso?.trim() ?      .numCompromisso.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqC-IsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNumCompromisso">
+              <inputTypes>java.lang.Long</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqC-YsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqC-osLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqC-4sLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqC_IsLEeqHHvcBOa57dw" name="compraPedidoInput.temCabimento" content="     ?.temCabimento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqC_osLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setTemCabimento">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqC_4sLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqDAIsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqDAYsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqDAosLEeqHHvcBOa57dw" name="compraPedidoInput.numCabimento" content="     ?.numCabimento?.trim() ?      .numCabimento.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqDBIsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNumCabimento">
+              <inputTypes>java.lang.Long</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dUqDBYsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dUqDBosLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dUqDB4sLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dUqDCIsLEeqHHvcBOa57dw" name="compraPedidoInput.valorCompra" content="     ?.valorCompra?.toFloat()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Float"/>
+            <operator xmi:type="expression:Operator" xmi:id="_dUqDCosLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setValorCompra">
+              <inputTypes>java.lang.Float</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8QIsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8QYsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8QosLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8Q4sLEeqHHvcBOa57dw" name="compraPedidoInput.dataPedido" content="compraPedidoInput?.dataPedido" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8RIsLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8RYsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setDataPedido">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8RosLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8R4sLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8SIsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8SYsLEeqHHvcBOa57dw" name="compraPedidoInput.nomeCompra" content="compraPedidoInput?.nomeCompra" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8SosLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8S4sLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNomeCompra">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8TIsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8TYsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8TosLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8T4sLEeqHHvcBOa57dw" name="compraPedidoInput.numCompromisso" content="compraPedidoInput?.numCompromisso?.trim() ? compraPedidoInput.numCompromisso.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8UIsLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8UYsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNumCompromisso">
+              <inputTypes>java.lang.Long</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8UosLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8U4sLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8VIsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8VYsLEeqHHvcBOa57dw" name="compraPedidoInput.temCabimento" content="compraPedidoInput?.temCabimento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8VosLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8V4sLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setTemCabimento">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8WIsLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8WYsLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8WosLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8W4sLEeqHHvcBOa57dw" name="compraPedidoInput.numCabimento" content="compraPedidoInput?.numCabimento?.trim() ? compraPedidoInput.numCabimento.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8XIsLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8XYsLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setNumCabimento">
+              <inputTypes>java.lang.Long</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_gho8XosLEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gho8X4sLEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gho8YIsLEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gho8YYsLEeqHHvcBOa57dw" name="compraPedidoInput.valorCompra" content="compraPedidoInput?.valorCompra?.toFloat()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Float">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_gho8YosLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_gho8Y4sLEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setValorCompra">
+              <inputTypes>java.lang.Float</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_j8C4u4PbEeqXlKUduLqENg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_j8C4vIPbEeqXlKUduLqENg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_j8C4vYPbEeqXlKUduLqENg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -20,7 +145,43 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_j8C4wIPbEeqXlKUduLqENg">
             <targetForm xmi:type="expression:Expression" xmi:id="_j8C4wYPbEeqXlKUduLqENg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_j8C4woPbEeqXlKUduLqENg"/>
+          <contract xmi:type="process:Contract" xmi:id="_j8C4woPbEeqXlKUduLqENg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_ghoVMIsLEeqHHvcBOa57dw" name="compraPedidoInput" type="COMPLEX" dataReference="compraPedido" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVMYsLEeqHHvcBOa57dw" name="dataPedido" type="LOCALDATE" description="Data em que o pedido de compra foi efetuado" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVMosLEeqHHvcBOa57dw" name="nomeCompra" description="Nome da compra a pagar" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVM4sLEeqHHvcBOa57dw" name="numCompromisso" description="Número de compromisso associado à compra" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVNIsLEeqHHvcBOa57dw" name="temCabimento" type="BOOLEAN" description="Se este pagamento tem cabimento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVNYsLEeqHHvcBOa57dw" name="numCabimento" description="Número de cabimento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_ghoVNosLEeqHHvcBOa57dw" name="valorCompra" type="DECIMAL" description="Valor a pagar" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVN4sLEeqHHvcBOa57dw" expression="compraPedidoInput?.dataPedido != null" errorMessage="dataPedido is mandatory for comprasPedidos" name="mandatory_compraPedidoInput_dataPedido">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVOIsLEeqHHvcBOa57dw" expression="compraPedidoInput?.nomeCompra != null" errorMessage="nomeCompra is mandatory for comprasPedidos" name="mandatory_compraPedidoInput_nomeCompra">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVOYsLEeqHHvcBOa57dw" expression="compraPedidoInput?.numCompromisso != null" errorMessage="numCompromisso is mandatory for comprasPedidos" name="mandatory_compraPedidoInput_numCompromisso">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVOosLEeqHHvcBOa57dw" expression="!compraPedidoInput?.numCompromisso || compraPedidoInput?.numCompromisso.isLong()" errorMessage="A Long value is expected for comprasPedidos.numCompromisso" name="type_long_compraPedidoInput_numCompromisso">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVO4sLEeqHHvcBOa57dw" expression="compraPedidoInput?.temCabimento != null" errorMessage="temCabimento is mandatory for comprasPedidos" name="mandatory_compraPedidoInput_temCabimento">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVPIsLEeqHHvcBOa57dw" expression="!compraPedidoInput?.numCabimento || compraPedidoInput?.numCabimento.isLong()" errorMessage="A Long value is expected for comprasPedidos.numCabimento" name="type_long_compraPedidoInput_numCabimento">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_ghoVPYsLEeqHHvcBOa57dw" expression="compraPedidoInput?.valorCompra != null" errorMessage="valorCompra is mandatory for comprasPedidos" name="mandatory_compraPedidoInput_valorCompra">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_lKFuEIsLEeqHHvcBOa57dw" expression="compraPedidoInput.dataPedido.isAfter(java.time.LocalDate.now())&#xD;&#xA;return true;" errorMessage="Pagamento da compra tem que ser efetuado no futuro" name="pagamentoNoFuturo">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_20fTQIsLEeqHHvcBOa57dw" expression="compraPedidoInput.valorCompra > 0&#xD;&#xA;return true;" errorMessage="O valor a pagar tem que ser maior que zero" name="valorAPagarMaiorQueZero">
+              <inputNames>compraPedidoInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_j8C4w4PbEeqXlKUduLqENg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_g_6CQIPcEeqXlKUduLqENg" outgoing="_x1en4IkkEeqCs6_Zt3VV5Q" incoming="_jlBDUIPcEeqXlKUduLqENg _k00YgIklEeqCs6_Zt3VV5Q _NX-MMIkoEeqCs6_Zt3VV5Q _GKBF0IkqEeqCs6_Zt3VV5Q _n2KLUIlhEeqm0fYUL6Uqjg _p9cn8IlhEeqm0fYUL6Uqjg">
@@ -60,16 +221,6 @@
           <contract xmi:type="process:Contract" xmi:id="__tHtKIkkEeqCs6_Zt3VV5Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__tHtK4kkEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_CN7dAIklEeqCs6_Zt3VV5Q" name="Validar despesa" outgoing="_yH7NUIklEeqCs6_Zt3VV5Q" incoming="_gp7scIklEeqCs6_Zt3VV5Q">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_CN8EEYklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_CN8EEIklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
-          <stepSummary xmi:type="expression:Expression" xmi:id="_CN8EEoklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
-          <loopCondition xmi:type="expression:Expression" xmi:id="_CN8EE4klEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <loopMaximum xmi:type="expression:Expression" xmi:id="_CN8EFIklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_CN8EFYklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <iteratorExpression xmi:type="expression:Expression" xmi:id="_CN8EF4klEeqCs6_Zt3VV5Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
-          <completionCondition xmi:type="expression:Expression" xmi:id="_CN8EFoklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-        </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_GMGiwIklEeqCs6_Zt3VV5Q" name="Despesa valida?" outgoing="_jLzzUIklEeqCs6_Zt3VV5Q _ES2FoIkmEeqCs6_Zt3VV5Q" incoming="_yH7NUIklEeqCs6_Zt3VV5Q">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_GMHJ0YklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_GMHJ0IklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
@@ -89,6 +240,58 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ruQ8loklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ruQ8mIklEeqCs6_Zt3VV5Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ruQ8l4klEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:Task" xmi:id="_J6atMIsKEeqHHvcBOa57dw" name="Validar despesa" outgoing="_yH7NUIklEeqCs6_Zt3VV5Q" incoming="_gp7scIklEeqCs6_Zt3VV5Q" overrideActorsOfTheLane="false">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_CN8EEYklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_CN8EEIklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_CN8EEoklEeqCs6_Zt3VV5Q" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_pZQAsIsMEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_pZQAsYsMEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qK8jYIsMEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pZQAsosMEeqHHvcBOa57dw" name="status" content="status" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uvEO0IsMEeqHHvcBOa57dw" name="status" description="Estado da validação da despesa">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_uvEO0YsMEeqHHvcBOa57dw"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_pZQAs4sMEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_vglLUIsMEeqHHvcBOa57dw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_vglLUYsMEeqHHvcBOa57dw" name="compraPedido" content="compraPedido" type="TYPE_VARIABLE" returnType="com.company.model.comprasPedidos">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_v1BxUIsMEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_vglLUosMEeqHHvcBOa57dw" name="motivoDeRecusa" content="motivoDeRecusa" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_xa2foIsMEeqHHvcBOa57dw" name="motivoDeRecusa" description="Se a despesa for recusada, tem que ser dada uma razão">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_xa2foYsMEeqHHvcBOa57dw"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_vglLU4sMEeqHHvcBOa57dw" type="JAVA_METHOD" expression="setMotivoRecusa">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_CN8EE4klEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_CN8EFIklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_CN8EFYklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_CN8EF4klEeqCs6_Zt3VV5Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_CN8EFoklEeqCs6_Zt3VV5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_J6bUSYsKEeqHHvcBOa57dw">
+            <targetForm xmi:type="expression:Expression" xmi:id="_QuxV4IsKEeqHHvcBOa57dw" name="newForm" content="6f4486ec-cfa5-40b2-bb16-1a93b82cfba6" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          </formMapping>
+          <contract xmi:type="process:Contract" xmi:id="_J6bUSIsKEeqHHvcBOa57dw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_LE9i0IsMEeqHHvcBOa57dw" name="status" description="Estado da validação da despesa">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_LE9i0YsMEeqHHvcBOa57dw"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_NDd24IsMEeqHHvcBOa57dw" name="motivoDeRecusa" description="Se a despesa for recusada, tem que ser dada uma razão">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_NDd24YsMEeqHHvcBOa57dw"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_RTeTgIsMEeqHHvcBOa57dw" expression="status == &quot;aprovado&quot; || (status == &quot;recusado&quot; &amp;&amp; motivoDeRecusa?.trim())&#xD;&#xA;return true;" errorMessage="Se a despesa for recusada, tem que existir uam razão" name="razaoObrigatoria">
+              <inputNames>motivoDeRecusa</inputNames>
+              <inputNames>status</inputNames>
+            </constraints>
+          </contract>
+          <expectedDuration xmi:type="expression:Expression" xmi:id="_J6bUS4sKEeqHHvcBOa57dw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="__vl4IIPbEeqXlKUduLqENg" name="UJC">
@@ -240,11 +443,17 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_TiodMIlgEeqm0fYUL6Uqjg" name="CA"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_-vNvIIsAEeqHHvcBOa57dw" documentation="Pedido para pagamento de um compra" name="compraPedido" dataType="_j8C45IPbEeqXlKUduLqENg" className="com.company.model.comprasPedidos">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4X1g4IsBEeqHHvcBOa57dw" name="initCompraPedido()" content="def comprasPedidosVar = new com.company.model.comprasPedidos()&#xD;&#xA;comprasPedidosVar.compraID = BonitaUsers.getProcessInstanceInitiator(apiAccessor, processInstanceId).id&#xD;&#xA;comprasPedidosVar.status = &quot;pendente&quot; &#xD;&#xA;comprasPedidosVar.dataCompra =      ?.dataCompra&#xD;&#xA;comprasPedidosVar.nomeCompra =      ?.nomeCompra&#xD;&#xA;comprasPedidosVar.numCompromisso =      ?.numCompromisso?.trim() ?      .numCompromisso.toLong() : null&#xD;&#xA;comprasPedidosVar.temCabimento =      ?.temCabimento&#xD;&#xA;comprasPedidosVar.numCabimento =      ?.numCabimento?.trim() ?      .numCabimento.toLong() : null&#xD;&#xA;comprasPedidosVar.valorCompra =      ?.valorCompra?.toFloat()&#xD;&#xA;return comprasPedidosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.comprasPedidos">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_gx3DMIsDEeqHHvcBOa57dw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_gx3DMosDEeqHHvcBOa57dw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_j8C4xIPbEeqXlKUduLqENg">
         <targetForm xmi:type="expression:Expression" xmi:id="_j8C4xYPbEeqXlKUduLqENg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_j8C4xoPbEeqXlKUduLqENg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_j8C4x4PbEeqXlKUduLqENg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="__tsP8IsIEeqHHvcBOa57dw" name="submitPedidoCompra" content="b597202f-9aaf-40d9-9a83-ea0b5376891c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_jlBDUIPcEeqXlKUduLqENg" target="_g_6CQIPcEeqXlKUduLqENg" source="_j8C4s4PbEeqXlKUduLqENg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_jlBDUYPcEeqXlKUduLqENg"/>
@@ -254,7 +463,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_x1oY4IkkEeqCs6_Zt3VV5Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_x1o_8IkkEeqCs6_Zt3VV5Q" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_gp7scIklEeqCs6_Zt3VV5Q" target="_CN7dAIklEeqCs6_Zt3VV5Q" source="_j8C4t4PbEeqXlKUduLqENg">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_gp7scIklEeqCs6_Zt3VV5Q" target="_J6atMIsKEeqHHvcBOa57dw" source="_j8C4t4PbEeqXlKUduLqENg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_gp7scYklEeqCs6_Zt3VV5Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_gp7scoklEeqCs6_Zt3VV5Q" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -270,7 +479,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_wNh9MIklEeqCs6_Zt3VV5Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_wNh9MYklEeqCs6_Zt3VV5Q" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_yH7NUIklEeqCs6_Zt3VV5Q" target="_GMGiwIklEeqCs6_Zt3VV5Q" source="_CN7dAIklEeqCs6_Zt3VV5Q">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_yH7NUIklEeqCs6_Zt3VV5Q" target="_GMGiwIklEeqCs6_Zt3VV5Q" source="_J6atMIsKEeqHHvcBOa57dw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yH7NUYklEeqCs6_Zt3VV5Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_yH7NUoklEeqCs6_Zt3VV5Q" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -474,10 +683,6 @@
               <children xmi:type="notation:DecorationNode" xmi:id="__tKJYIkkEeqCs6_Zt3VV5Q" type="5005"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="__tJiUYkkEeqCs6_Zt3VV5Q" x="80" y="170"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_CN95QIklEeqCs6_Zt3VV5Q" type="3027" element="_CN7dAIklEeqCs6_Zt3VV5Q" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_CN95QoklEeqCs6_Zt3VV5Q" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CN95QYklEeqCs6_Zt3VV5Q" x="346" y="57"/>
-            </children>
             <children xmi:type="notation:Shape" xmi:id="_GMIX8IklEeqCs6_Zt3VV5Q" type="3008" element="_GMGiwIklEeqCs6_Zt3VV5Q" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_GMIX8oklEeqCs6_Zt3VV5Q" type="5026">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_GMIX84klEeqCs6_Zt3VV5Q" x="1" y="-70"/>
@@ -493,6 +698,10 @@
             <children xmi:type="notation:Shape" xmi:id="_ruSKsIklEeqCs6_Zt3VV5Q" type="3027" element="_ruQ8kIklEeqCs6_Zt3VV5Q" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_ruSKsoklEeqCs6_Zt3VV5Q" type="5017"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ruSKsYklEeqCs6_Zt3VV5Q" x="509" y="303"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_J6bUTIsKEeqHHvcBOa57dw" type="3005" element="_J6atMIsKEeqHHvcBOa57dw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_J6b7UIsKEeqHHvcBOa57dw" type="5005"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6bUTYsKEeqHHvcBOa57dw" x="345" y="56" width="100" height="49"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_6nRTcYPbEeqXlKUduLqENg"/>
@@ -680,7 +889,7 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x2U8cIkkEeqCs6_Zt3VV5Q" id="(1.0,0.8837209302325582)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x2U8cYkkEeqCs6_Zt3VV5Q" id="(0.1,0.54)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_gp86kIklEeqCs6_Zt3VV5Q" type="4001" element="_gp7scIklEeqCs6_Zt3VV5Q" source="_j8C47IPbEeqXlKUduLqENg" target="_CN95QIklEeqCs6_Zt3VV5Q" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_gp86kIklEeqCs6_Zt3VV5Q" type="4001" element="_gp7scIklEeqCs6_Zt3VV5Q" source="_j8C47IPbEeqXlKUduLqENg" target="_J6bUTIsKEeqHHvcBOa57dw" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_gp86k4klEeqCs6_Zt3VV5Q" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_gp9hoIklEeqCs6_Zt3VV5Q" y="-10"/>
       </children>
@@ -690,7 +899,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_jMCc0IklEeqCs6_Zt3VV5Q" type="4001" element="_jLzzUIklEeqCs6_Zt3VV5Q" source="_GMIX8IklEeqCs6_Zt3VV5Q" target="_GjXMMIklEeqCs6_Zt3VV5Q" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_jMDD4IklEeqCs6_Zt3VV5Q" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_jMDD4YklEeqCs6_Zt3VV5Q" x="25" y="-33"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jMDD4YklEeqCs6_Zt3VV5Q" x="10" y="-28"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_jMCc0YklEeqCs6_Zt3VV5Q" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jMCc0oklEeqCs6_Zt3VV5Q" points="[0, 22, 0, -88]$[0, 89, 0, -21]"/>
@@ -711,7 +920,7 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wNikQoklEeqCs6_Zt3VV5Q" points="[-4, 17, 25, -125]$[-4, 69, 25, -73]$[0, 69, 29, -73]$[0, 120, 29, -22]"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wNlAgIklEeqCs6_Zt3VV5Q" id="(0.19,0.44)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_yH70YIklEeqCs6_Zt3VV5Q" type="4001" element="_yH7NUIklEeqCs6_Zt3VV5Q" source="_CN95QIklEeqCs6_Zt3VV5Q" target="_GMIX8IklEeqCs6_Zt3VV5Q" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_yH70YIklEeqCs6_Zt3VV5Q" type="4001" element="_yH7NUIklEeqCs6_Zt3VV5Q" source="_J6bUTIsKEeqHHvcBOa57dw" target="_GMIX8IklEeqCs6_Zt3VV5Q" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_yH70Y4klEeqCs6_Zt3VV5Q" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_yH70ZIklEeqCs6_Zt3VV5Q" y="-10"/>
       </children>
