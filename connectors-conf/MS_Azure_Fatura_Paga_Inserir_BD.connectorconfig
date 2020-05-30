@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="database-mssqlserver" version="1.2.1" name="MS_Azure_Fatura_Paga_Inserir_BD" modelVersion="7.10.0-001">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:sqlserver://serversie.database.windows.net:1433;databaseName=projetosie" content="jdbc:sqlserver://serversie.database.windows.net:1433;databaseName=projetosie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="script()" content="&#xD;&#xA;def str =  &quot;SET IDENTITY_INSERT Fatura ON; insert into dbo.Fatura(id, id_fornecedor, pagamento, tipo_documento,data_prevista, data_entrega, justificacao) values(&quot;+fatura?.id_fatura+&quot;,'&quot;+fatura?.id_fornecedor+&quot;','&quot;+fatura?.pagamento+&quot;','&quot;+fatura?.tipo_documento+&quot;','&quot;+fatura?.data_prevista+&quot;','&quot;+fatura?.data_entrega+&quot;','&quot;+fatura?.justificacao+&quot;')&quot;&#xD;&#xA;&#xD;&#xA;for (a in artigo)&#xD;&#xA;&#x9;str += &quot;SET IDENTITY_INSERT Artigo ON; insert into dbo.Artigo(codigo, nome, preco, quantidade, id_fatura)  values (&quot; + a.codigo + &quot;, '&quot; + a.nome + &quot;', '&quot; + a.preco+ &quot;','&quot; + a.quantidade+ &quot;', '&quot; + fatura?.id_fatura + &quot;');&quot;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;return str;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:BusinessObjectData" name="artigo" multiple="true" className="com.company.model.Artigo">
+        <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/My%20project/diagrams/ProcessoFatura-1.0.proc#_Gqv-xJRSEeqriOndpJ9CRg"/>
+      </referencedElements>
+      <referencedElements xsi:type="process:BusinessObjectData" name="fatura" className="com.company.model.Fatura">
+        <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/My%20project/diagrams/ProcessoFatura-1.0.proc#_Gqv-xJRSEeqriOndpJ9CRg"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="rootsie" content="rootsie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="Root12345" content="Root12345" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType">
+    <expression xsi:type="expression:Expression" name="outputType" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

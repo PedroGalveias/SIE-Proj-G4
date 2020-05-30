@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ANE" description="Agência Nacional de Empreendedorismo">
+  <customUserInfoDefinitions/>
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>
@@ -31,6 +32,7 @@
       <title>Mrs</title>
       <jobTitle>Compensation specialist</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
         <email>april.sanchez@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -81,6 +83,7 @@
       <title>Mr</title>
       <jobTitle>Human resources benefits</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
         <email>walter.bates@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -131,6 +134,7 @@
       <title>Mr</title>
       <jobTitle>Financial controller</jobTitle>
       <manager>zachary.williamson</manager>
+      <personalData/>
       <professionalData>
         <email>patrick.gardenier@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -206,6 +210,7 @@
       <title>Mr</title>
       <jobTitle>Infrastucture specialist</jobTitle>
       <manager>favio.riviera</manager>
+      <personalData/>
       <professionalData>
         <email>jan.fisher@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -256,6 +261,7 @@
       <title>Mr</title>
       <jobTitle>Vice President of Marketing</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>favio.riviera@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -281,6 +287,7 @@
       <title>Mr</title>
       <jobTitle>Chief Technical Officer</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>michael.morrison@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -306,6 +313,7 @@
       <title>Mr</title>
       <jobTitle>Engineer</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
         <email>marc.marseau@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -331,6 +339,7 @@
       <title>Mr</title>
       <jobTitle>Engineer</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
         <email>joseph.hovell@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -356,6 +365,7 @@
       <title>Mr</title>
       <jobTitle>Consultant</jobTitle>
       <manager>michael.morrison</manager>
+      <personalData/>
       <professionalData>
         <email>mauro.zetticci@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -406,6 +416,7 @@
       <title>Mrs</title>
       <jobTitle>Vice President of Sales</jobTitle>
       <manager>william.jobs</manager>
+      <personalData/>
       <professionalData>
         <email>daniela.angelo@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -429,8 +440,9 @@
       <firstName>Anthony</firstName>
       <lastName>Nichols</lastName>
       <title>Mr</title>
-      <jobTitle>Account manager</jobTitle>
+      <jobTitle>Classificador de fatura</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>anthony.nichols@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -449,6 +461,7 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
     </user>
     <user userName="misa.kumagai">
       <firstName>Misa</firstName>
@@ -456,6 +469,7 @@
       <title>Mrs</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>misa.kumagai@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -481,6 +495,7 @@
       <title>Mr</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>norio.yamazaki@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -506,6 +521,7 @@
       <title>Mrs</title>
       <jobTitle>Account manager</jobTitle>
       <manager>daniela.angelo</manager>
+      <personalData/>
       <professionalData>
         <email>giovanna.almeida@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -527,61 +543,96 @@
     </user>
   </users>
   <roles>
-    <role name="member">
-      <displayName>Member</displayName>
+    <role name="tesouraria">
+      <displayName>Tesouraria</displayName>
       <description></description>
+    </role>
+    <role name="UCF">
+      <displayName>UCF</displayName>
+      <description></description>
+    </role>
+    <role name="gestor_contrato">
+      <displayName>Gestor de contrato</displayName>
+    </role>
+    <role name="Colaborador">
+      <displayName>colaborador</displayName>
+    </role>
+    <role name="classificador_fatura">
+      <displayName>Classificador da fatura</displayName>
+    </role>
+    <role name="responsavel_cr">
+      <displayName>Responsável pelo CR</displayName>
+    </role>
+    <role name="UJC">
+      <displayName>UJC</displayName>
+    </role>
+    <role name="gestor_projeto">
+      <displayName>Gestor de Projeto</displayName>
+      <description></description>
+    </role>
+    <role name="responsavel_unidade_validador_despesa">
+      <displayName>Responsável da Unidade Validador da despesa</displayName>
+      <description></description>
+    </role>
+    <role name="diretor_area_validador_despesa">
+      <displayName>Diretor da Área Validador da despesa</displayName>
+      <description></description>
+    </role>
+    <role name="gestor_projeto_&amp;_responsavel_unidade_validador_despesa">
+      <displayName>Gestor de Projeto &amp; Responsável da Unidade Validador de Despesa</displayName>
+      <description>Role com duas responsabilidades</description>
     </role>
   </roles>
   <groups>
-    <group name="acme">
-      <displayName>Acme</displayName>
+    <group name="ane">
+      <displayName>ANE</displayName>
       <description>This group represents the acme department of the ACME organization</description>
     </group>
-    <group name="hr" parentPath="/acme">
+    <group name="hr" parentPath="/ane">
       <displayName>Human Resources</displayName>
       <description>This group represents the human resources department of the ACME organization</description>
     </group>
-    <group name="finance" parentPath="/acme">
+    <group name="finance" parentPath="/ane">
       <displayName>Finance</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
-    <group name="it" parentPath="/acme">
+    <group name="it" parentPath="/ane">
       <displayName>Infrastructure</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
-    <group name="marketing" parentPath="/acme">
+    <group name="marketing" parentPath="/ane">
       <displayName>Marketing</displayName>
       <description>This group represents the marketing department of the ACME organization</description>
     </group>
-    <group name="production" parentPath="/acme">
+    <group name="production" parentPath="/ane">
       <displayName>Production</displayName>
       <description>This group represents the production department of the ACME organization</description>
     </group>
-    <group name="sales" parentPath="/acme">
+    <group name="sales" parentPath="/ane">
       <displayName>Sales</displayName>
       <description>This group represents the sales department of the ACME organization</description>
     </group>
-    <group name="europe" parentPath="/acme/sales">
+    <group name="europe" parentPath="/ane/sales">
       <displayName>Europe</displayName>
       <description>This group represents the europe department of the ACME organization</description>
     </group>
-    <group name="asia" parentPath="/acme/sales">
+    <group name="asia" parentPath="/ane/sales">
       <displayName>Asia</displayName>
       <description>This group represents the asia department of the ACME organization</description>
     </group>
-    <group name="latin_america" parentPath="/acme/sales">
+    <group name="latin_america" parentPath="/ane/sales">
       <displayName>Latin America</displayName>
       <description>This group represents the latin america department of the ACME organization</description>
     </group>
-    <group name="north_america" parentPath="/acme/sales">
+    <group name="north_america" parentPath="/ane/sales">
       <displayName>North America</displayName>
       <description>This group represents the north america department of the ACME organization</description>
     </group>
-    <group name="rd" parentPath="/acme/production">
+    <group name="rd" parentPath="/ane/production">
       <displayName>Research &amp; Development</displayName>
       <description>This group represents the research &amp; development department of the ACME organization</description>
     </group>
-    <group name="services" parentPath="/acme/production">
+    <group name="services" parentPath="/ane/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
@@ -589,128 +640,128 @@
   <memberships>
     <membership>
       <userName>william.jobs</userName>
-      <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <roleName>tesouraria</roleName>
+      <groupName>ane</groupName>
     </membership>
     <membership>
       <userName>april.sanchez</userName>
-      <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <roleName>UCF</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>walter.bates</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>virginie.jomphe</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>thorsten.hartmann</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>jan.fisher</userName>
-      <roleName>member</roleName>
+      <roleName>gestor_projeto_&amp;_responsavel_unidade_validador_despesa</roleName>
       <groupName>it</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
-      <roleName>member</roleName>
-      <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <roleName>gestor_contrato</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>michael.morrison</userName>
-      <roleName>member</roleName>
+      <roleName>responsavel_unidade_validador_despesa</roleName>
       <groupName>production</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>marc.marseau</userName>
-      <roleName>member</roleName>
+      <roleName>UJC</roleName>
       <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/ane/production</groupParentPath>
     </membership>
     <membership>
       <userName>joseph.hovell</userName>
-      <roleName>member</roleName>
+      <roleName>responsavel_cr</roleName>
       <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/ane/production</groupParentPath>
     </membership>
     <membership>
       <userName>mauro.zetticci</userName>
-      <roleName>member</roleName>
+      <roleName>gestor_projeto</roleName>
       <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/ane/production</groupParentPath>
     </membership>
     <membership>
       <userName>thomas.wallis</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/ane/production</groupParentPath>
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/ane/sales</groupParentPath>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>
-      <roleName>member</roleName>
+      <roleName>diretor_area_validador_despesa</roleName>
       <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/ane/sales</groupParentPath>
     </membership>
     <membership>
       <userName>norio.yamazaki</userName>
-      <roleName>member</roleName>
+      <roleName>tesouraria</roleName>
       <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/ane/sales</groupParentPath>
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
-      <roleName>member</roleName>
-      <groupName>latin_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <roleName>Colaborador</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
-      <roleName>member</roleName>
-      <groupName>north_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <roleName>classificador_fatura</roleName>
+      <groupName>finance</groupName>
+      <groupParentPath>/ane</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

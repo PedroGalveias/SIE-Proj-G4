@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="database-mssqlserver" version="1.2.1" name="MS_Azure_Connector_Config" modelVersion="7.10.0-001">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:sqlserver://serversie.database.windows.net:1433;databaseName=projetosie" content="jdbc:sqlserver://serversie.database.windows.net:1433;databaseName=projetosie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="SELECT * FROM Fatura;" type="TYPE_PATTERN" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="rootsie" content="rootsie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="Root12345" content="Root12345" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType">
+    <expression xsi:type="expression:Expression" name="outputType" content="table" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
