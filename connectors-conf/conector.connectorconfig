@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="database-mysql" version="1.0.0" name="conector" modelVersion="7.10.0-001">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.mysql.jdbc.Driver" content="com.mysql.jdbc.Driver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:mysql://localhost:3306/projetosie" content="jdbc:mysql://localhost:3306/projetosie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" type="TYPE_PATTERN" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="root" content="root" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="root" content="root" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType"/>
+</connectorconfiguration:ConnectorConfiguration>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.10.4">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Artigo">
+            <fields>
+                <field type="TEXT" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="codigo" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="quantidade" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="preco" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Claim">
+            <fields>
+                <field type="STRING" length="255" name="description" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="answer" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="satisfactionLevel" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Compra">
+            <fields>
+                <field type="LOCALDATE" length="255" name="data_compra" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_pagamento" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="n_cabimento" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id_fornecedor" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="valor" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="tipo_documento" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Artigo" fetchType="LAZY" name="artigos" nullable="true" collection="true"/>
+                <field type="TEXT" length="255" name="justificacao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validar_dados" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="valida_informacao" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id_compromisso" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aprovacao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Fatura">
+            <fields>
+                <field type="LOCALDATE" length="255" name="data_prevista" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_entrega" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id_fatura" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validacao_pagamento" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id_fornecedor" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="pagamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_documento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validacao_dados" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validacao_contrato" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="justificacao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="contrato" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
