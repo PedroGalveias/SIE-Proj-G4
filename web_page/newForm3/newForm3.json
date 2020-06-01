@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm3",
   "name" : "newForm3",
-  "lastUpdate" : 1590864573577,
+  "lastUpdate" : 1590877504310,
   "rows" : [
     [
       {
@@ -288,7 +288,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Data_prevista"
+                          "value" : "Data limite pagamento"
                         },
                         "type" : {
                           "type" : "constant"
@@ -425,7 +425,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_fatura"
+                          "value" : "Id fatura"
                         },
                         "type" : {
                           "type" : "constant",
@@ -461,6 +461,24 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.id_fatura"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "8b13507f-2d04-4a54-bb9e-cd12e89e12cc",

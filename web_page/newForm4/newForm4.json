@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm4",
   "name" : "newForm4",
-  "lastUpdate" : 1590865370503,
+  "lastUpdate" : 1590877548727,
   "rows" : [
     [
       {
@@ -732,7 +732,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_contrato"
+                          "value" : "Contrato validado"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -749,6 +749,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.validacao_contrato"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "94d8ca6c-be8b-4684-8e43-000a11f9b4d2",
@@ -785,7 +789,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Justificacao"
+                          "value" : "Justificação"
                         },
                         "type" : {
                           "type" : "constant",
@@ -821,6 +825,24 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.justificacao"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "b58a405c-3679-4cd8-b38b-241902a02655",

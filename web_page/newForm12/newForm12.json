@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm12",
   "name" : "newForm12",
-  "lastUpdate" : 1590869723657,
+  "lastUpdate" : 1590877461432,
   "rows" : [
     [
       {
@@ -455,7 +455,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_pagamento"
+                          "value" : "Validação pagamento"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -472,6 +472,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.validacao_pagamento"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "87784116-3441-4908-a6b1-4591e827d858",

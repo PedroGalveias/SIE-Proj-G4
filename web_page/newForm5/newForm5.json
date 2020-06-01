@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "newForm5",
   "name" : "newForm5",
-  "lastUpdate" : 1590865764537,
+  "lastUpdate" : 1590877572322,
   "rows" : [
     [
       {
@@ -679,7 +679,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_dados"
+                          "value" : "Dados validos"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -696,6 +696,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.validacao_dados"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "d8c4c7e9-6f07-4d68-ac6e-7e2ff368f751",

@@ -22,20 +22,19 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.Compra">
+        <businessObject qualifiedName="com.company.model.Despesa">
             <fields>
-                <field type="LOCALDATE" length="255" name="data_compra" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_prevista" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="data_pagamento" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="n_cabimento" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id_despesa" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="id_fornecedor" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="valor" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="tipo_documento" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Artigo" fetchType="LAZY" name="artigos" nullable="true" collection="true"/>
                 <field type="TEXT" length="255" name="justificacao" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="validar_dados" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="valida_informacao" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="id_compromisso" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="aprovacao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="cr_valida" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="UJC_valida" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="fonte_financiamento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="cabimento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="autorizacao_compromisso" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

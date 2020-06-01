@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "newForm6",
-  "name" : "newForm6",
-  "lastUpdate" : 1590877612104,
+  "id" : "newForm15",
+  "name" : "newForm15",
+  "lastUpdate" : 1590877315769,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "0a48ed11-1449-4a79-b2d5-0985ad166531",
+        "reference" : "1ba2ea91-6adc-4f4c-9597-a6e1a133082a",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -66,7 +66,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "c1cbe306-e65a-44f0-83de-ecf39da2054d",
+              "reference" : "fec245ee-8a9b-410c-a0f9-f44cc60e3c27",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -122,7 +122,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "af36c215-3606-40a6-8586-cacaba3ac7ed",
+              "reference" : "d7c57144-1c21-4332-80b6-18c7c5b5d9c2",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -137,7 +137,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "48d5fddc-2903-4a1b-b401-6f55f5f3a172",
+        "reference" : "7b27de98-a266-4cc2-b748-8392ccbae9bf",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -146,7 +146,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "cc5bdf33-79f6-42af-8bef-335241906c82",
+          "reference" : "9198c625-636e-4931-90b3-d1272153cca9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -186,7 +186,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Fatura"
+                    "value" : "Despesa"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -201,7 +201,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "8b862f7e-ea62-4bb1-9f6e-c8006ee601a8",
+                "reference" : "32ccdd3f-1a37-4a25-90cc-128429d21ef1",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -251,7 +251,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e0196055-ad15-4230-bb17-b46679c637a4",
+                "reference" : "a8fb6d21-f12f-441d-ab76-f1dcec25a136",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -272,7 +272,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!fatura.data_prevista"
+                          "value" : "!despesa.data_prevista"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -288,11 +288,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Data_prevista"
+                          "value" : "Data prevista"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{fatura.data_prevista|uiDate}}"
+                          "value" : "{{despesa.data_prevista|uiDate}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -305,95 +305,23 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        }
-                      },
-                      "reference" : "f2e00277-5a77-4ffe-a6c4-a42e010b686a",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbDatePicker"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Data de pagamento efetuado"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
                         },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "placeholder" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : 4
                         },
-                        "alignment" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "fatura.data_entrega"
+                          "value" : true
                         }
                       },
-                      "reference" : "c68f9d2f-f9f0-4979-ac11-e334159f3492",
+                      "reference" : "f35c9923-4c0f-435d-81f3-ffdb7491d43c",
                       "hasValidationError" : false,
-                      "id" : "pbDatePicker"
+                      "id" : "pbText"
                     }
                   ],
                   [
@@ -413,7 +341,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!fatura.id_fatura"
+                          "value" : "!despesa.data_pagamento"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -429,11 +357,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_fatura"
+                          "value" : "Data pagamento"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{fatura.id_fatura}}"
+                          "value" : "{{despesa.data_pagamento|uiDate}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -446,9 +374,297 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "25088c69-c72d-4462-b4b9-61d7bff5ab61",
+                      "reference" : "87e9273f-d40f-42c2-8a15-f75ace9db52e",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!despesa.id_despesa"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbText"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Id despesa"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{despesa.id_despesa}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "94f0e62c-0cc4-47c1-91a6-aeb6e7ae1e73",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!despesa.id_fornecedor"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbText"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nº fornecedor"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{despesa.id_fornecedor}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "d7ed7975-887d-4d1c-8ced-0691f13617ed",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!despesa.valor"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbText"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Valor"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{despesa.valor}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "1e57f13a-5bde-487c-acd1-22dfdf9a505b",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!despesa.justificacao"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbText"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Justificação"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{despesa.justificacao}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "53c3e583-3272-4dda-ad55-bf09c248ac2a",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -465,8 +681,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.validacao_pagamento"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -478,11 +694,11 @@
                         },
                         "disabled" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_pagamento"
+                          "value" : "Validação CR"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -498,10 +714,71 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "fatura.validacao_pagamento"
+                          "value" : "despesa.cr_valida"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "28137878-1c9e-45a3-93cb-5f128eaa90a0",
+                      "reference" : "c2e7e829-0aaa-4437-b28e-02d96a4775e5",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!despesa.UJC_valida"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbCheckbox"
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "UJC valida"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.CheckboxWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "despesa.UJC_valida"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "cdf31254-9502-482e-8d14-69909eac6c3b",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
                     }
@@ -523,7 +800,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!fatura.id_fornecedor"
+                          "value" : "!despesa.fonte_financiamento"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -539,11 +816,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_fornecedor"
+                          "value" : "Fonte financiamento"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{fatura.id_fornecedor}}"
+                          "value" : "{{despesa.fonte_financiamento}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -556,123 +833,21 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        }
-                      },
-                      "reference" : "24fc56f1-dfa7-4c14-ada6-bc871c90a724",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.pagamento"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Pagamento"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.pagamento}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
                         }
                       },
-                      "reference" : "47672e73-d0ac-410f-86b0-5a051fbfbcb3",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.tipo_documento"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo_documento"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.tipo_documento}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "d4289904-7055-4952-ae68-526befa77c84",
+                      "reference" : "7e527e56-3480-4300-a541-6be3a2378b65",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -690,7 +865,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!fatura.validacao_dados"
+                          "value" : "!despesa.cabimento"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -706,7 +881,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_dados"
+                          "value" : "Existe cabimento"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -722,10 +897,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "fatura.validacao_dados"
+                          "value" : "despesa.cabimento"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "bfa89613-7490-4841-94ac-bdaa3d3e55ca",
+                      "reference" : "c1407eef-e3b8-4b19-b1cb-ff8f9174fa17",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
                     }
@@ -743,7 +922,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!fatura.validacao_contrato"
+                          "value" : "!despesa.autorizacao_compromisso"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -759,7 +938,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacao_contrato"
+                          "value" : "Autorização compromisso"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -775,120 +954,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "fatura.validacao_contrato"
-                        }
-                      },
-                      "reference" : "e6c2c6dc-902a-446a-b50b-c4afc91b0dbc",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "despesa.autorizacao_compromisso"
                         },
-                        "labelHidden" : {
+                        "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.justificacao"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbText"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Justificacao"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{fatura.justificacao}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
                         }
                       },
-                      "reference" : "9a8c1d9d-e88d-451c-9459-f7a6cb91b79e",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!fatura.contrato"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbCheckbox"
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Contrato"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.CheckboxWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "fatura.contrato"
-                        }
-                      },
-                      "reference" : "785c9da0-88c3-4e6a-856c-3e738a0d1dec",
+                      "reference" : "735b1c06-216b-4b6c-900f-b4a58ff0dc76",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
                     }
@@ -976,7 +1049,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "bbd19082-7ae5-4ab5-bd99-2aa22886f94c",
+                "reference" : "ecd50077-25b4-49ed-b1a4-b17e9428b433",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -1036,7 +1109,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "263b0344-4147-4a95-91ce-72799aa2ae89",
+                "reference" : "a6e6b196-207d-45b7-b703-cc9043b9cd12",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -1048,7 +1121,7 @@
   ],
   "assets" : [
     {
-      "id" : "0a318d8b-3c48-45ec-b4c0-68ab2a296406",
+      "id" : "16a9768c-83e6-467e-a343-cac62353424c",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -1057,17 +1130,17 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "fatura" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.fatura_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "task" : {
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "despesa" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.despesa_ref.link}}"
       ],
       "exposed" : false
     },
@@ -1089,11 +1162,11 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.fatura ){",
+        "if( $data.despesa ){",
         "\treturn {",
-        "\t\t//map fatura variable to expected task contract input",
-        "\t\tfaturaInput: {",
-        "\t\t\tdata_entrega: $data.fatura.data_entrega !== undefined ? $data.fatura.data_entrega : null",
+        "\t\t//map despesa variable to expected task contract input",
+        "\t\tdespesaInput: {",
+        "\t\t\tcr_valida: $data.despesa.cr_valida !== undefined ? $data.despesa.cr_valida : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1116,7 +1189,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "77ee7485-3cd8-4696-a0a3-7c6b4ea0d49d",
+  "uuid" : "2ce22eba-2975-43e6-a730-2767b9065f36",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "newForm10",
-  "name" : "newForm10",
-  "lastUpdate" : 1590877433756,
+  "id" : "newForm24",
+  "name" : "newForm24",
+  "lastUpdate" : 1590878294971,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "0402f76f-c79c-44ad-b82c-fe6f298361a0",
+        "reference" : "fea936c3-005a-4325-a8e5-5dd596562611",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -20,10 +20,135 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "80070cec-6c98-41d2-8934-250820ffc412",
+          "reference" : "a5a0247d-9d45-41d1-a745-6a0f34b70b0a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant"
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "9221f448-317e-43cb-8ad3-22850590bd4f",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbUpload"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Despesa"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.despesaInput1"
+                        }
+                      },
+                      "reference" : "04caca53-568b-4641-a3a4-7cf421ee7ead",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload"
+                    }
+                  ]
+                ]
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -60,7 +185,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Fatura"
+                    "value" : "Despesa"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -75,7 +200,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "88f3afde-9c0b-41a6-8dea-5e7b6a8d3b5f",
+                "reference" : "840da633-a738-4e2a-a134-0af58362bd7d",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -125,7 +250,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3cf74c51-5519-4e74-89d6-70c71f9b199e",
+                "reference" : "c9987d0d-348c-4a2f-a345-7dace5d8d5f8",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -158,7 +283,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id fornecedor"
+                          "value" : "Id_fornecedor"
                         },
                         "type" : {
                           "type" : "constant",
@@ -166,7 +291,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -193,84 +318,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.faturaInput.id_fornecedor"
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : "formInput.despesaInput.id_fornecedor"
                         }
                       },
-                      "reference" : "10b6b05d-74d5-4851-b0b8-31c8b7002405",
+                      "reference" : "b55bad7e-d223-4fa6-a52c-16ed10fbaf71",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "widgetId" : {
-                    "type" : "constant"
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "class" : {
-                    "type" : "constant",
-                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "3428b5f1-24cc-4abc-92ee-4859f056c544",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
+                  ],
                   [
                     {
                       "type" : "component",
@@ -288,11 +343,11 @@
                         },
                         "widgetId" : {
                           "type" : "constant",
-                          "value" : "pbUpload"
+                          "value" : "pbInput"
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 4
+                          "value" : 1
                         },
                         "readOnly" : {
                           "type" : "constant",
@@ -300,15 +355,15 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Documento"
+                          "value" : "Valor"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
+                          "value" : false
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -319,8 +374,7 @@
                           "value" : "top"
                         },
                         "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
+                          "type" : "constant"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -328,7 +382,7 @@
                         },
                         "class" : {
                           "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -336,12 +390,12 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.documentoDocumentInput"
+                          "value" : "formInput.despesaInput.valor"
                         }
                       },
-                      "reference" : "d7caf400-bc6c-42de-a032-abd90e96190f",
+                      "reference" : "44ddf083-3b83-4cca-bf10-eff14ff89fa4",
                       "hasValidationError" : false,
-                      "id" : "pbUpload"
+                      "id" : "pbInput"
                     }
                   ]
                 ]
@@ -427,7 +481,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f7e4366e-2e81-4ab9-a01f-20263ff81eb9",
+                "reference" : "c6e99686-20e3-4bb2-b78c-a8e65d077b67",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -487,7 +541,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "688e37bd-e49b-41be-9a5c-56938d2f225f",
+                "reference" : "ac0c2883-e7b5-4b80-8b0f-8cd1785016fe",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -499,7 +553,7 @@
   ],
   "assets" : [
     {
-      "id" : "0f03c806-3fff-4d39-ace6-613c276eea50",
+      "id" : "60c94224-d3f4-42b8-9c22-2ec7fe4ce537",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -512,10 +566,10 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"faturaInput\" : {\r",
-        "    \"id_fornecedor\" : 0\r",
-        "  },\r",
-        "  \"documentoDocumentInput\" : null\r",
+        "  \"despesaInput\" : {\r",
+        "    \"id_fornecedor\" : 0,\r",
+        "    \"valor\" : 0\r",
+        "  }\r",
         "}"
       ],
       "exposed" : false
@@ -539,15 +593,15 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tfaturaInput: $data.formInput.faturaInput,",
-        "\tdocumentoDocumentInput: $data.formInput.documentoDocumentInput",
+        "\tdespesaInput1: $data.formInput.despesaInput1,",
+        "\tdespesaInput: $data.formInput.despesaInput",
         "}"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "e1960c11-6a00-4328-b380-f31e9395a8a5",
+  "uuid" : "fd60c2c4-b66f-49c0-bd87-134157644620",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
